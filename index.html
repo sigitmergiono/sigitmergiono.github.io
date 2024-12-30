@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar .nav-link {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            color: #007bff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            border: none;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        .card-body {
+            background-color: #f8f9fa;
+        }
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .icon-box a {
+            color: #007bff;
+            margin: 0 15px;
+            transition: transform 0.3s;
+        }
+        .icon-box a:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#profile">Profil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My Personal Profile</h1>
+            <p>A brief introduction about me</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Profil Section -->
+        <section id="profile" class="text-center mb-5">
+            <img src="profile.jpeg" alt="Profile Picture" class="profile-img mb-3">
+            <h2>Sigit Mergiono</h2>
+            <p class="lead">Dipuji tidak terbang, dihina tiap hari bang.</p>
+        </section>
+
+        <!-- Pendidikan Section -->
+        <section id="education">
+            <h3 class="section-title">Pendidikan</h3>
+            <div class="card">
+                <div class="card-header">Sekolah Dasar</div>
+                <div class="card-body">
+                    <p><strong>SDN 03 Paduraksa</strong> (2008 - 2014)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Sekolah Menengah Pertama</div>
+                <div class="card-body">
+                    <p><strong>SMPN 05 Pemalang</strong> (2014 - 2017)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Sekolah Menengah Kejuruan</div>
+                <div class="card-body">
+                    <p><strong>SMK PGRI 1 Taman</strong> - Teknik Pemesinan (2017 - 2020)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pengalaman Kerja Section -->
+        <section id="experience">
+            <h3 class="section-title">Pengalaman Kerja</h3>
+            <div class="card">
+                <div class="card-header">PT Hyundai Motor Manufacturing Indonesia</div>
+                <div class="card-body">
+                    <p><strong>Operator Produksi</strong> (2021 - 2024)</p>
+                    <ul>
+                        <li>Merakit komponen mobil di bagian assembly chassis.</li>
+                        <li>Bertanggung jawab menjaga kualitas produk mobil yang dihasilkan.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keahlian Section -->
+        <section id="skills">
+            <h3 class="section-title">Keahlian</h3>
+            <ul>
+                <li>Memahami Prosedur Dan Teknik Pemasangan Komponen Mobil.</li>
+                <li>Bisa Mengoperasikan Alat Kerja Assy (Mesin Manipulator, Impact Wrench, Nut Runners).</li>
+                <li>Bisa Alat Ukur ( Caliper, Micrometer, Waterpass, Torque Tohnichi, Feeler Gauge ).</li>
+                <li>Memahami Proses Visual Check.</li>
+                <li>Soft Skills: Manajemen waktu, komunikasi, pemecahan masalah.</li>
+            </ul>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="contact">
+            <h3 class="section-title">Kontak</h3>
+            <p>Hubungi saya melalui:</p>
+            <div class="icon-box">
+                <a href="mailto:mergionos@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/sigitmergiono" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/sigitm28" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SIGIT MERGIONO. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
